@@ -18,7 +18,7 @@ import { GuardDutyTesterStack } from '../lib//stacks/tester-stack';
 
 test('Check All Test Resources', () => {
   const app = new App();
-  const stack = new GuardDutyTesterStack(app, 'MyTestStack', {
+  const stack = new MyLampStack(app, 'MyLampStack', {
     env: {
       account: 'test-account',
       region: 'us-west-2',
